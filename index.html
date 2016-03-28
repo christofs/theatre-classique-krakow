@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <!-- CUSTOMIZE THIS! -->
-<title>Computerphilologie</title>
+<title>Stylistique du théâtre classique</title>
 <meta name="author" content="Christof Schöch">
 <!-- END -->
 <meta name="description" content="Slides">
@@ -35,25 +35,27 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
 
 <section data-markdown>
 <script type="text/template">
-# Computerphilologie: Überblick
+# Stylistique du théâtre classique
 <hr/>
 <br/>
-<p>Workshop Digitale Forschungsmethoden in der Romanistik</p>
-<p>Forum Junge Romanistik 2016, Universität Würzburg</p>
+<p>Erasmus+</p>
+<p>Paedagogical University, Kraków, Poland, March/April 2016</p>
 <br/>
 <hr/>
-<p>Christof Schöch<br/>CLiGS - Universität Würzburg</p>
+<p>Christof Schöch<br/>CLiGS - University of Würzburg, Germany</p>
 <p><img height="50" data-src="img/basics/UWUE.jpg"></img>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img height="100" data-src="img/basics/CLiGS.jpg"></img>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img height="50" data-src="img/basics/BMBF.jpg"></img></p>
 </script>
 </section>
 
 <section data-markdown>
 <script type="text/template">
-## Überblick
-1. Computerphilologie
-2. Texterzeugung
-3. Textanalyse
-4. Weiterführendes
+## Aperçu
+1. Stylistique numérique
+2. Le théâtre classique comme objet d'étude
+3. Léo Spitzer, encore une fois
+4. Analyses contrastives
+5. Topic Modeling
+5. Weiterführendes
 </script>
 </section>
 
@@ -61,9 +63,19 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
 	
 <section data-markdown>
 <script type="text/template">
-# 1. Was ist Computerphilologie?
+# 1. Stylistique numérique
 </script>
 </section>
+
+<section data-markdown>
+<script type="text/template">
+## Approches
+* Qualitatives ou quantitatives
+* Partant des catégories établies ou des données textuelles
+* S'intéressant aux auteurs, au genres ou aux époques
+</script>
+</section>
+
 
 <section data-markdown>
 <script type="text/template">
@@ -74,245 +86,397 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
 
 <section data-markdown>
 <script type="text/template">
-## Computerphilologie
-* Literaturwissenschaft: Erfassen, Erzeugen, Anreichern, Analyse, Interpretation, Speicherung und Dissemination von (literarischen) Texten
-* Computerphilologie: Literaturwissenschaft auf Grundlage digitaler Textdaten und mit Hilfe algorithmischer Werkzeuge und Methoden.
-<p><small>(Taxonomie: https://github.com/dhtaxonomy/TaDiRAH)</small></p>
+## Deux approches
+* En partant des catégories historiques / établies
+* En partant des données textuelles
 </script>
 </section>
 
-<section data-markdown>
-<script type="text/template">
-## Zwei zentrale Bereiche der Computerphilologie
-* Erzeugen/Anreichern: Digitalisierung, (digitale) Editionen, Textsammlungen, Korpora
-* Analysieren: Stil, Inhalt, Räumlichkeit, Figurennetzwerke, Gattungen, etc.
-</script>
-</section>
-
-</section>
-<section>
-
-<section data-markdown>
-<script type="text/template">
-# 2. Erzeugen/Anreichern literarischer Texte 
-</script>
-</section>
-
-<section data-markdown>
-<script type="text/template">
-## Aspekte des Erzeugens/Anreichern von Text 
-* Digitalisierung (Scannen, OCR)
-* Digitale Texteditionen und Textsammlungen
-* Linguistisch annotierte Korpora
-* Editionsphilologie: Stemmata, Kollationierung
-</script>
-</section>
-
-<section data-markdown>
-<script type="text/template">
-## Werkzeuge 
-</script>
-</section>
-
-
-<section data-markdown>
-<script type="text/template">
-## Optical Character Recognition: FineReader
-<img height="500" data-src="img/finereader.png"></img>
-<p>http://www.abbyy.com/de-de/finereader</p>
-</script>
-</section>
-
-<section data-markdown>
-<script type="text/template">
-## Text kodieren: TEI
-<img height="500" data-src="img/tei.png"></img>
-<p>https://www.tei-c.org</p>
-</script>
-</section>
-
-<section data-markdown>
-<script type="text/template">
-## XML/TEI-Dateien bearbeiten: oXygen
-<img height="500" data-src="img/oxygen.png"></img>
-<p>https://www.oxygenxml.com</p>
-</script>
-</section>
-
-<section data-markdown>
-<script type="text/template">
-## XML/TEI-Dateien bearbeiten: jEdit
-<img height="500" data-src="img/jedit.png"></img>
-<p>http://www.jedit.org/</p>
-</script>
-</section>
-
-<section data-markdown>
-<script type="text/template">
-## Annotation: CATMA</h3>
-<img height="500" data-src="img/TA_CATMA.jpg"></img>
-<p><a href="http://www.catma.de/">http://www.catma.de/</a></p>
-</script>
-</section>
-
-<section data-markdown>
-<script type="text/template">
-## Kollationierung: Juxta
-<img height="500" data-src="img/TA_Juxta.jpg"></img>
-<p>http://www.juxtasoftware.org</p>
-</script>
-</section>
-
-<section data-markdown>
-<script type="text/template">
-## Editionen 
-</script>
-</section>
-
-<section data-markdown>
-<script type="text/template">
-## Walt Whitman Archive
-<img height="500" data-src="img/waltwhitman.png"></img>
-<p>http://www.whitmanarchive.org/</p>
-</script>
-</section>
-
-<section data-markdown>
-<script type="text/template">
-## Devonshire MS Social Edition
-<img height="500" data-src="img/devonshire.png"></img>
-<p>https://en.wikibooks.org/wiki/The_Devonshire_Manuscript</p>
-</script>
-</section>
-
-<section data-markdown>
-<script type="text/template">
-## Van Gogh Letters 
-<img height="500" data-src="img/vangogh.png"></img>
-<p>http://vangoghletters.org/vg/</p>
-</script>
-</section>
-
-<section data-markdown>
-<script type="text/template">
-## Moralische Wochenschriften
-<img height="500" data-src="img/mws.png"></img>
-<p>http://gams.uni-graz.at/mws/</p>
-</script>
-</section>
-
-<section data-markdown>
-<script type="text/template">
-## Faust-Edition
-<img height="500" data-src="img/faustedition.png"></img>
-<p>http://beta.faustedition.net</p>
-</script>
-</section>
-
-</section>
-<section>
-
-<section data-markdown>
-<script type="text/template">
-# 3. Analyse literarischer Texte
-</script>
-</section>
-
-<section data-markdown>
-<script type="text/template">
-## Perspektiven der digitalen Textanalyse
-* Quantitative vs. qualitative Verfahren
-* Klassifikation vs. Clustering
-* Informationsextraktion vs. Datenvisualisierung
-* GUI vs. CLI
-</script>
-</section>
-
-<section data-markdown>
-<script type="text/template">
-## Natural Language Processing: NLTK
-<img height="500" data-src="img/nltk.png"></img>
-<p>http://www.nltk.org</p>
-</script>
-</section>
-
-<section data-markdown>
-<script type="text/template">
-## Maschinelles Lernen: scikit-learn
-<img height="500" data-src="img/sklearn.png"></img>
-<p>http://scikit-learn.org</p>
-</script>
-</section>
-
-<section data-markdown>
-<script type="text/template">
-## Korpusanalyse: TXM
-<img height="500" data-src="img/TA_TXM.jpg"></img>
-<p>http://textometrie.ens-lyon.fr</p>
-</script>
-</section>
-
-<section data-markdown>
-<script type="text/template">
-## Topic Modeling: MALLET 
-<img height="500" data-src="img/TA_Mallet.png"></img>
-<p>http://mallet.cs.umass.edu/topics.php</p>
-</script>
-</section>
-
-<section data-markdown>
-<script type="text/template">
-## Stilometrie: stylo for R 
-<img height="500" data-src="img/stylo.png"></img>
-<p>https://sites.google.com/site/computationalstylistics/</p>
-
-</script>
-</section>
-
-<section data-markdown>
-<script type="text/template">
-## Netzwerkanalyse: Gephi 
-<img height="500" data-src="img/gephi.jpg"></img>
-<p>https://gephi.org/</p>
-</script>
-</section>
-
-<section data-markdown>
-<script type="text/template">
-## Kartierung: DARIAH Geobrowser
-<img height="500" data-src="img/geobrowser.png"></img>
-<p>https://de.dariah.eu/geobrowser</p>
-</script>
-</section>
 
 
 </section>
 <section>
 
+
 <section data-markdown>
 <script type="text/template">
-# 4. Weiterführendes
+# 2. Le théâtre classique comme objet d'étude 
 </script>
 </section>
+
+<section data-markdown>
+<script type="text/template">
+## theatre-classique.fr 
+<p><img height="500" data-src="img/theatre-classique.png"></img></p>
+<p>(810 pièces, en XML/TEI, dir. Paul Fièvre)</p>
+</script>
+</section>
+
+<section data-markdown>
+<script type="text/template">
+## La collection utilisée ici 
+<p><img height="500" data-src="img/corpus-tc419.png"></img></p>
+<p>(415 pièces: 1630-1800; trois genres; en vers)</p>
+</script>
+</section>
+
+<section data-markdown>
+<script type="text/template">
+## La collection de tragédies 
+<p><img height="500" data-src="img/partition-racine.png"></img></p>
+<p>(200 pièces: 1630-1800; tragédies)</p>
+</script>
+</section>
+
+
+
+
+</section>
+<section>
+
+
+<section data-markdown>
+<script type="text/template">
+# 3. Léo Spitzer, encore une fois
+</script>
+</section>
+
+<section data-markdown>
+<script type="text/template">
+## L'effet de sourdine
+</script>
+</section>
+
+<section data-markdown>
+<script type="text/template">
+## Le point de départ
+* Répéter, avec les moyens actuels, l'étude stylistique de Léo Spitzer sur Racine, datant de 1928 (Léo Spitzer, "L'effet de sourdine dans le style classique: Racine")
+* Reformuler en langage informatique les phénomènes stylistiques repérés par Spitzer
+* S'apercevoir des limites des deux approches, contraster la notion de style qui est derrière
+</script>
+</section>
+
+<section data-markdown>
+<script type="text/template">
+## L'effet de sourdine
+<p><img height="400" data-src="img/spitzer-p209.png"></img></p>
+<p>(Spitzer, L'effet de sourdine, p. 209)</p>
+</script>
+</section>
+
+<section data-markdown>
+<script type="text/template">
+## Racine "tel qu'en lui-même"
+<p><img height="400" data-src="img/spitzer-p209.png"></img></p>
+<p>(Spitzer, L'effet de sourdine, p. 209)</p>       <!--(Allusion à Mallarmé, "Tombeau d'Edgar Poe".)-->
+</script>
+</section>
+
+<section data-markdown>
+<script type="text/template">
+## Aspects problématiques
+* Aucune comparaison entre Racine et d'autres auteurs contemporains de tragédies (noté dès 1929 par Hanns Heiß)
+* Absence d'une position claire sur la relation entre Racine le style de l'époque classique (cf. K. Alphons Knauth, 1980)
+* Parfois, le lien entre phénomène stylistique et "sourdine" est faible, peu explicité voire paradoxal (cf. Max Kuttner 1930)
+* Exemples positifs uniquement, absence d'exemples négatifs et comparaison de leur taux
+</script>
+</section>
+
+<section data-markdown>
+<script type="text/template">
+## Une note intéressante
+<p><img height="400" data-src="img/spitzer-note1.png"></img></p>
+<p>(Spitzer, L'effet de sourdine, p. 315)</p>
+</script>
+</section>
+
+<section data-markdown>
+<script type="text/template">
+## Que faire
+* Retrouver les phénomènes porteur de l'effet de sourdine chez Racine
+* Comparer avec ses précurseurs, comme Jean Rotrou ou Pierre Corneille
+* Comparer avec d'autres auteurs de l'âge classique
+</script>
+</section>
+
+<section data-markdown>
+<script type="text/template">
+## Les textes utilisés 
+* Racine: 11 tragédies
+* Proches: ca. 1660-1690: Corneille, Corneille, Boyer, Quinault, Pradon, Campistron
+* Autres: ca. 1630-1660: Rotrou, Du Ryer, Magnon, Tristan, La Calprenède,Desfontaines
+* (NB.: Les résultats dépendent largement des choix effectués ici.)
+</script>
+</section>
+
+<section data-markdown>
+<script type="text/template">
+## La collection de tragédies 
+<p><img height="500" data-src="img/racine-proches-autres.png"></img></p>
+<p>(200 pièces: 1630-1700; tragédies)</p>
+</script>
+</section>
+
+
+<section data-markdown>
+<script type="text/template">
+## Spitzer et TXM/CQP
+</script>
+</section>
+
+
+<section data-markdown>
+<script type="text/template">
+## Spitzer
+<p>"Le SI d'affirmation forte" (p. 219)</p>
+<p><img height="500" data-src="img/spitzer-p219.png"></img></p>
+</script>
+</section>
+
+<section data-markdown>
+<script type="text/template">
+## CQP
+<p>[frpos="Nc.*"][word="si"][frpos="Ag"]</p>
+<p><img height="500" data-src="img/cqp-p219.png"></img></p>
+</script>
+</section>
+
+<section data-markdown>
+<script type="text/template">
+## Fréquences
+ <table style="width:90%">
+  <tr>
+    <td></td>
+    <td>tous</td>
+    <td>Racine</td>
+    <td>proches</td>
+    <td>autres</td>
+  </tr>
+  <tr>
+    <td>absolus</td>
+    <td>1716</td>
+    <td>197</td>
+    <td>1100</td>
+    <td>419</td>
+  </tr>
+  <tr>
+    <td>relatifs</td>
+    <td>0.0975</td>
+    <td>0.1067</td>
+    <td>0.959</td>
+    <td>0.0977</td>
+  </tr>
+</table> 
+</script>
+</section>
+
+<section data-markdown>
+<script type="text/template">
+## Spitzer
+<p>"La périphrase avec VOIR" (p. 241)</p>
+<p><img height="400" data-src="img/spitzer-p241.png"></img></p>
+</script>
+</section>
+
+<section data-markdown>
+<script type="text/template">
+## CQP
+<p>[frpos="Pp.\*"][frpos="Pp.\*"]{0,1}[frpos="Vu.\*"][frlemma="VOIR"][frpos="V.\*"]</p>
+<p><img height="400" data-src="img/cqp-p241.png"></img></p>
+</script>
+</section>
+
+
+<section data-markdown>
+<script type="text/template">
+## Fréquences
+ <table style="width:90%">
+  <tr>
+    <td></td>
+    <td>tous</td>
+    <td>Racine</td>
+    <td>proches</td>
+    <td>autres</td>
+  </tr>
+  <tr>
+    <td>absolus</td>
+    <td>147</td>
+    <td>26</td>
+    <td>85</td>
+    <td>36</td>
+  </tr>
+  <tr>
+    <td>relatifs</td>
+    <td>0.0084</td>
+    <td>0.0141</td>
+    <td>0.0074</td>
+    <td>0.0084</td>
+  </tr>
+</table> 
+</script>
+</section>
+
+<section data-markdown>
+<script type="text/template">
+## Spitzer
+<p><img height="400" data-src="img/spitzer-p245.png"></img></p>
+<p>"Adjectifs et adverbes d'appréciation" (p. 245)</p>
+</script>
+</section>
+
+<section data-markdown>
+<script type="text/template">
+## CQP
+<p>[frlemma="JUSTE"][frlemma="CRAINTE|COLÈRE|COURROUX|FUREUR| VENGEANCE|DOULEUR|CHÂTIMENT|ALARMES| EFFROI|DÉSESPOIR|HORREUR|SUPPLICE| DÉSIR|REMORDS|TERREUR|HAINE| AGRESSEUR|AMBITION|AMOUR|AUTORITÉ| AVERSION|DÉPIT|DEVOIR|ERREUR| EXCÈS|FERMETÉ|FIERTÉ|FRAYEUR| HAINE|HOMICIDE|IGNOMINIE|IMPATIENCE| INDIGNATION|JALOUSIE|MENACE|MÉPRIS| ORGUEIL|PEINE|PLAINTE|PUISSANCE| PUNITION|RAGE|RIGUEUR|SACRIFICE| ARRÊTS|FLAMMES|RIGUEUR"]</p>
+</script>
+</section>
+
+<section data-markdown>
+<script type="text/template">
+## CQP
+<p><img height="400" data-src="img/cqp-p245.png"></img></p>
+<p></p>
+</script>
+</section>
+
+<section data-markdown>
+<script type="text/template">
+## Fréquences
+ <table style="width:90%">
+  <tr>
+    <td></td>
+    <td>tous</td>
+    <td>Racine</td>
+    <td>proches</td>
+    <td>autres</td>
+  </tr>
+  <tr>
+    <td>absolus</td>
+    <td>371</td>
+    <td>40</td>
+    <td>250</td>
+    <td>81</td>
+  </tr>
+  <tr>
+    <td>relatifs</td>
+    <td>0.0211</td>
+    <td>0.0217</td>
+    <td>0.0218</td>
+    <td>0.0189</td>
+  </tr>
+</table> 
+</script>
+</section>
+
+</script>
+</section>
+
+
+
+<section data-markdown>
+<script type="text/template">
+# 4. Topic Modeling Genre
+</script>
+</section>
+
+<section data-markdown>
+<script type="text/template">
+## What is Topic Modeling?
+<p><img height="500" data-src="img/XXX.png"></img></p>
+<p>XXX</p>
+</script>
+</section>
+
+
+<section data-markdown>
+<script type="text/template">
+## The Topic Modeling Workflow
+</script>
+</section>
+
+
+<section data-markdown>
+<script type="text/template">
+## Topics in the théatre classique collection (1)
+</script>
+</section>
+
+<section data-markdown>
+<script type="text/template">
+## Topics in the théatre classique collection (2)
+</script>
+</section>
+
+<section data-markdown>
+<script type="text/template">
+## Topics in the théatre classique collection (3)
+</script>
+</section>
+
+<section data-markdown>
+<script type="text/template">
+## Topics in the théatre classique collection (4)
+</script>
+</section>
+
+
+<section data-markdown>
+<script type="text/template">
+## Topics and subgenres: heatmap
+</script>
+</section>
+
+<section data-markdown>
+<script type="text/template">
+## Topics and subgenres: progression (1)
+</script>
+</section>
+
+<section data-markdown>
+<script type="text/template">
+## Topics and subgenres: progression (2)
+</script>
+</section>
+
+<section data-markdown>
+<script type="text/template">
+## Topics and subgenres: clustering (1)
+</script>
+</section>
+
+
+<section data-markdown>
+<script type="text/template">
+## Topics and subgenres: clustering (2)
+</script>
+</section>
+
+
+<section data-markdown>
+<script type="text/template">
+## Topics and subgenres: clustering (3)
+</script>
+</section>
+
+
+
+</script>
+</section>
+
+
+<section data-markdown>
+<script type="text/template">
+# Conclusions
+</script>
+</section>
+
 
 <section data-markdown>
 <script type="text/template">
 ## Lektürehinweise (einführend)
 <small>
-* Jannidis, F. (2010). "Methoden der computergestützten Textanalyse". In Nünning, A. and Nünning, V. (eds), _Methoden der literatur- und kulturwissenschaftlichen Textanalyse_. Stuttgart & Weimar: Metzler, pp. 109–32.
-* Jannidis, F. (2007). "Computerphilologie". In Anz, T. (ed), _Handbuch Literaturwissenschaft_, vol. 2 (Methoden und Theorien). Stuttgart: Metzler, pp. 27–40.
-* Schöch, C. (im Erscheinen). "Ein digitales Textformat für die Literaturwissenschaften. Die Richtlinien der Text Encoding Initiative und ihr Nutzen für Textedition und Textanalyse". _Romanische Studien_.
-
-</small>
-</script>
-</section>
-
-<section data-markdown>
-<script type="text/template">
-## Lektürehinweise (vertiefend)
-<small>
-* Burnard, L. (2014). _What Is the Text Encoding Initiative?_. Marseille: OpenEdition Press.
-* Shillingsburg, P. (2006). _From Gutenberg to Google. Electronic Representations of Literary Texts_. Cambridge: Cambridge Univ. Press.
+* Leo Spitzer, "Die klassische Dämpfung in Racines Stil", _Archivum Romanicum_ 12, 1928, 361-472.
+* Léo Spitzer, "L'effet de sourdine dans le style classique: Racine" [1928], Études de style. Paris: Gallimard, 1970, p. 208-335. 
 * Alpaydin, E. (2010). _Introduction to Machine Learning_. 2nd ed. Cambridge, Mass: MIT Press.
 * Ramsay, S. (2011). _Reading Machines : Toward an Algorithmic Criticism_. Urbana  Ill.: University of Illinois Press.
 
@@ -320,18 +484,9 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
 </script>
 </section>
 
-<section data-markdown>
-<script type="text/template">
-## Online-Ressourcen
-<small>
-* Catalogue of Digital Scholarly Editions: http://www.digitale-edition.de/index.html
-* Textdaten Romanistik Wiki: http://wikis.fu-berlin.de/display/tdr/
-* Doing Digital Humanities Bibliography: https://www.zotero.org/groups/doing_digital_humanities_-_a_dariah_bibliography
-
-</small>
 </script>
 </section>
-</section>
+
 
 <section data-markdown>
 <script type="text/template">
