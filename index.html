@@ -226,23 +226,41 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
     <td>autres</td>
   </tr>
   <tr>
-    <td>absolus</td>
+    <td>absolus (par catégorie)</td>
     <td>147</td>
     <td>26</td>
     <td>85</td>
     <td>36</td>
   </tr>
   <tr>
-    <td>relatifs</td>
+    <td>relatifs (moyenne par catégorie)</td>
     <td>0.0084</td>
     <td>0.0141</td>
     <td>0.0074</td>
     <td>0.0084</td>
   </tr>
 </table>
-<p>Plus fréquent chez Racine ! (signifiance ?)</p> 
+<p>Plus fréquent chez Racine ! (mais signifiant ?)</p> 
 </script>
 </section>
+
+<section data-markdown>
+<script type="text/template">
+## Test de signifiance statistique
+* Racine vs. proches (fréquences relatives *par texte*; prenant en compte la variance)
+<br/>
+* Moyennes
+    * Racine: 0.0139
+    * Proches: 0.0072
+* Mann-Whitney U (2-sided)
+    * statistic: 199.0
+    * p-value: 0.0202
+* Kruskal-Wallis
+    * statistic: 5.4
+    * p-value: 0.0198
+</script>
+</section>
+
 
 
 <section data-markdown>
@@ -287,7 +305,7 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
     <td>0.0977</td>
   </tr>
 </table> 
-<p>Absence de différences significatives</p>
+<p>(Absence de différences significatives)</p>
 </script>
 </section>
 
@@ -326,7 +344,23 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
     <td>0.0807</td>
   </tr>
 </table> 
-<p>Légère différence pour Racine !</p>
+<p>Légère différence pour Racine ! (signifiant?)</p>
+</script>
+</section>
+
+<section data-markdown>
+<script type="text/template">
+## Test de signifiance statistique
+* Racine vs. proches
+* Moyennes
+    * Racine: 0.0970
+    * Proches: 0.0808
+* Mann-Whitney U (2-sided)
+    * statistic: 246.0
+    * p-value: 0.1013
+* Kruskal-Wallis
+    * statistic: 2.710
+    * p-value: 0.0997
 </script>
 </section>
 
@@ -379,10 +413,11 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
     <td>0.0189</td>
   </tr>
 </table> 
-<p>Absence de différences significatives</p>
+<p>Différences significatives ?</p>
 </script>
 </section>
 
+<!--
 <section data-markdown>
 <script type="text/template">
 ## Test de signifiance statistique
@@ -393,6 +428,39 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
 * kruskal-wallis: statistic: 0.0685 ; p-value: 0.7934
 </script>
 </section>
+-->
+
+<section data-markdown>
+<script type="text/template">
+## Test de signifiance statistique (Racine vs. Proches)
+* means
+    * Racine: 0.0211
+    * Proches: 0.0213
+* Mann-Whitney U (two-sided) 
+    * statistic 331.0
+    * p-value: 0.7588
+* Kruskal-Wallis: 
+    * statistic: 0.0989
+    * p-value: 0.7531
+</script>
+</section>
+
+
+<section data-markdown>
+<script type="text/template">
+## Test de signifiance statistique (Racine vs. autres)
+* means 
+    * Racine: 0.0211
+    * Autres: 0.0195
+* Mann Whitney U (two-sided)
+    * statistic 127.0 ; 
+    * p-value: 0.6065
+* Kruskal-Wallis: 
+    * statistic: 0.2827 
+    * p-value: 0.5950
+</script>
+</section>
+
 
 
 <section data-markdown>
@@ -725,8 +793,9 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
 <section data-markdown>
 <script type="text/template">
 ## Conclusions
-* 
-* 
+* Il y a beaucoup de techniques nouvelles ou moins nouvelles à adapter pour la stylistique numérique <!-- .element: class="fragment" data-fragment-index="1" -->
+* Ces méthodes nous donnent une nouvelle perspective sur l'histoire littéraire et le style des auteurs ou des genres, au-delà des textes canonisés  <!-- .element: class="fragment" data-fragment-index="2" -->
+* La disponibilité d'un nombre suffisant de textes numérisées et de haute qualité est une condition essentielle  <!-- .element: class="fragment" data-fragment-index="3" -->
 </script>
 </section>
 
