@@ -50,10 +50,10 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
 <section data-markdown>
 <script type="text/template">
 ## Aperçu
-1. Stylistique numérique
-2. Léo Spitzer, encore une fois
-3. Transition stylométrique
-4. Topic Modeling
+1. Stylistique des auteurs et des genres
+2. Auteurs, ou : l'effet de sourdine
+3. Transition : auteurs et genres
+4. Genres, ou : mots et topics
 5. Conclusions
 </script>
 </section>
@@ -62,24 +62,29 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
 
 <section data-markdown>
 <script type="text/template">
-# 1. Stylistique numérique
+# 1. Stylistique des auteurs et des genres
 </script>
 </section>
 
 <section data-markdown>
 <script type="text/template">
-## Analyse des textes littéraires
+## Analyse numérique des textes littéraires
 <p><img height="500" data-src="img/literary-text-analysis.png"></img></p>
 </script>
 </section>
 
 <section data-markdown>
 <script type="text/template">
-## Approches numériques
-* Qualitatives ou quantitatives
-* Partant des catégories établies ou des données textuelles
-* S'intéressant aux auteurs, au genres ou aux époques
-* Porteuses de notions de "style" très différentes
+## Stylistique des auteurs et des genres
+* Les deux catégories <!-- .element: class="fragment" data-fragment-index="1" -->
+    * Auteur : *relativement* claire <!-- .element: class="fragment" data-fragment-index="1" -->
+    * Genre : hautement problématique <!-- .element: class="fragment" data-fragment-index="1" -->
+* Deux approches  <!-- .element: class="fragment" data-fragment-index="2" -->
+    * Accepter les catégories, trouver les différences distinctives <!-- .element: class="fragment" data-fragment-index="2" -->
+    * Partir des données pour découvrir des groupes de textes cohérents <!-- .element: class="fragment" data-fragment-index="2" -->
+* Pluralité de la notion de *style* <!-- .element: class="fragment" data-fragment-index="3" -->
+    * Niveaux de la description stylistique <!-- .element: class="fragment" data-fragment-index="3" -->
+    * Visions de ce qu'est un *style* <!-- .element: class="fragment" data-fragment-index="3" -->
 </script>
 </section>
 
@@ -87,7 +92,15 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
 <script type="text/template">
 ## theatre-classique.fr 
 <p><img height="500" data-src="img/theatre-classique.png"></img></p>
-<p>(810 pièces, en XML/TEI, dir. Paul Fièvre)</p>
+<p>(810 pièces, dir. Paul Fièvre)</p>
+</script>
+</section>
+
+<section data-markdown>
+<script type="text/template">
+## theatre-classique.fr 
+<p><img height="500" data-src="img/theatre-classique-TEI.png"></img></p>
+<p>(XML/TEI P4, métadonnées détaillées)</p>
 </script>
 </section>
 
@@ -95,20 +108,10 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
 </section>
 <section>
 
-<!--
-<section data-markdown>
-<script type="text/template">
-## La collection utilisée ici 
-<p><img height="500" data-src="img/corpus-tc419.png"></img></p>
-<p>(415 pièces: 1630-1800; trois genres; en vers)</p>
-</script>
-</section>
--->
-
 
 <section data-markdown>
 <script type="text/template">
-# 3. Léo Spitzer, encore une fois
+# 3. Auteurs, ou : l'effet de sourdine
 </script>
 </section>
 
@@ -163,7 +166,7 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
 
 <section data-markdown>
 <script type="text/template">
-## Que faire
+## Objectifs
 * Retrouver les phénomènes porteur de l'effet de sourdine chez Racine
 * Comparer avec ses proches contemporains, comme Pierre Corneille ou Quinault
 * Comparer avec d'autres auteurs de l'âge classique
@@ -237,7 +240,7 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
     <td>0.0084</td>
   </tr>
 </table>
-<p>Plus fréquent chez Racine !</p> 
+<p>Plus fréquent chez Racine ! (signifiance ?)</p> 
 </script>
 </section>
 
@@ -382,10 +385,23 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
 
 <section data-markdown>
 <script type="text/template">
+## Test de signifiance statistique
+* query "juste [colère|crainte|courroux|fureur|...]"
+* abs_freqs: Racine 105, proches 805
+* means: Racine 0.0558, proches 0.0574
+* mannwhitneyu-two-sided: statistic 387.0 ; p-value: 0.7984
+* kruskal-wallis: statistic: 0.0685 ; p-value: 0.7934
+</script>
+</section>
+
+
+<section data-markdown>
+<script type="text/template">
 ## Conclusions
-* Le style absolu de Spitzer vs. les fréquences relatives comparatives de TXM/CQP
-* L'importance du contexte vs. l'importance des marque formelles
-* Besoin de produire des annotations plus riches (sémantiques notamment)  
+* Le style absolu de Spitzer vs. les fréquences relatives comparatives de TXM/CQP <!-- .element: class="fragment" data-fragment-index="1" -->
+* L'importance du contexte vs. l'importance des marque formelles  <!-- .element: class="fragment" data-fragment-index="2" -->
+* Besoin de produire des annotations plus riches (sémantiques notamment) <!-- .element: class="fragment" data-fragment-index="3" -->
+* Nécessité de combiner les tests de signifiance statistique aux riches reqêtes TXM/CQP <!-- .element: class="fragment" data-fragment-index="4" -->
 </script>
 </section>
 
@@ -398,23 +414,39 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
 
 <section data-markdown>
 <script type="text/template">
-# Transition stylométrique : <br/>auteurs et genres
+# Transition : <br/>auteurs et genres
 </script>
 </section>
 
 <section data-markdown>
 <script type="text/template">
-## Auteurs et genres (1)
+## Auteurs et genres : Delta
 <p><img height="500" data-src="img/stylo_TRACOM-for-DHR.jpg"></img></p>
-<p>Analyse 'Delta" avec trois auteurs et deux genres</p>
+<p>Analyse 'Delta' avec trois auteurs et deux genres</p>
 </script>
 </section>
 
 <section data-markdown>
 <script type="text/template">
-## Auteurs et genres (2)
+## Auteurs et genres : PCA
 <p><img height="500" data-src="img/stylo_PCA_balanced_classical.png"></img></p>
-<p>PCA avec deux auteurs et deux genres</p>
+<p>Thomas et Pierre Corneille, comédies et tragédies</p>
+</script>
+</section>
+
+<section data-markdown>
+<script type="text/template">
+## Auteurs et genres : PCA
+<p><img height="500" data-src="img/PCA_balance_scatterplotmatrix_3d_full.jpg"></img></p>
+<p>L'importance de la troisième dimension</p>
+</script>
+</section>
+
+<section data-markdown>
+<script type="text/template">
+## Auteurs et genres : PCA plus
+<p><img height="500" data-src="img/PCA_balanced_pcaplus.png"></img></p>
+<p>Dimensions, catégories et mots associés</p>
 </script>
 </section>
 
@@ -427,13 +459,64 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
 
 <section data-markdown>
 <script type="text/template">
-# 4. Genres et topics
+# 4. Genre : mots et topics
 </script>
 </section>
 
 <section data-markdown>
 <script type="text/template">
-# Qu'est-ce que le 'topic modeling'?
+## Questions et hypothèses
+* Netteté de la distinction des sous-genres ? 
+* Exemplaires prototypiques vs. hybrides ? 
+* Statut de la tragi-comédie ?  
+</script>
+</section>
+
+
+<section data-markdown>
+<script type="text/template">
+# (A) Quelques différences entre les genres
+<br/>
+<p>(comédies, tragédies, tragi-comédies)</p>
+</script>
+</section>
+
+<section data-markdown>
+<script type="text/template">
+## Nombre d'actes
+<p><img height="500" data-src="img/boxplot_TRACOM_acts_by_genre_n=505.jpg"></img></p>
+<p>(n=505)</p>
+</script>
+</section>
+
+<section data-markdown>
+<script type="text/template">
+## Nombre de scènes
+<p><img height="500" data-src="img/boxplot_TRACOM_scenes-by-genre_n=505.jpg"></img></p>
+<p>(n=505)</p>
+</script>
+</section>
+
+<section data-markdown>
+<script type="text/template">
+## Nombre de mots
+<p><img height="500" data-src="img/boxplot_TRACOM_length-by-genre_n=505.jpg"></img></p>
+<p>(n=505)</p>
+</script>
+</section>
+
+<section data-markdown>
+<script type="text/template">
+## Figures dramatiques
+<p><img height="500" data-src="img/boxplot_TRACOM_roles-by-genre_n=505.jpg"></img></p>
+<p>(n=505)</p>
+</script>
+</section>
+
+
+<section data-markdown>
+<script type="text/template">
+# (B) Topics et genres
 </script>
 </section>
 
@@ -445,6 +528,7 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
 </script>
 </section>
 
+<!--
 <section data-markdown>
 <script type="text/template">
 ## Qu'est-ce que le 'topic modeling'?
@@ -460,18 +544,13 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
 <p>(Steyvers and Griffiths, "Topic Modeling", 2006)</p>
 </script>
 </section>
+-->
 
 <section data-markdown>
 <script type="text/template">
 ## Le 'Topic Modeling Workflow' (tmw)
 <img height="500" data-src="img/tm_tmw_en.png"></img>
 <p><https://github.com/cligs/tmw></p>
-</script>
-</section>
-
-<section data-markdown>
-<script type="text/template">
-# Genres et topics du théâtre classique
 </script>
 </section>
 
@@ -488,7 +567,7 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
 <script type="text/template">
 ## Topics du théatre classique (1)
 <p><img height="500" data-src="img/figure03.jpg"></img></p>
-<p>Topics très répandus vs. spécifiques</p>
+<p>Topics répandus (gauche) vs. spécifiques (droite)</p>
 </script>
 </section>
 
@@ -496,7 +575,7 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
 <script type="text/template">
 ## Topics du théatre classique (2)
 <p><img height="500" data-src="img/figure04.jpg"></img></p>
-<p>Distribution extrême vs. homogène</p>
+<p>Distribution extrême (gauche) vs. homogène (droite)</p>
 </script>
 </section>
 
@@ -504,7 +583,7 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
 <script type="text/template">
 ## Topics du théatre classique (3)
 <p><img height="500" data-src="img/figure05.jpg"></img></p>
-<p>Topics 'thématiques' et autres</p>
+<p>Topics 'thématiques' (gauche) et autres (droite)</p>
 </script>
 </section>
 
@@ -524,6 +603,7 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
 </script>
 </section>
 
+<!---
 <section data-markdown>
 <script type="text/template">
 ## La progression textuelle
@@ -539,6 +619,7 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
 <p>La question de l'honneur</p>
 </script>
 </section>
+-->
 
 <section data-markdown>
 <script type="text/template">
@@ -573,6 +654,61 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
 * Les topic scores révèlent la relation entre comédie, tragédie et tragi-comédie
 </script>
 </section>
+
+
+<section data-markdown>
+<script type="text/template">
+# (B) Les mots grammaticaux et les genres
+</script>
+</section>
+
+<section data-markdown>
+<script type="text/template">
+## L'approche retenue
+* Textes : 108 pièces par 8 auteurs et dans 3 genres
+* Question : influence du genre sur les mots grammaticaux
+* Tâche : classification des pièces selon leur auteur (80/20)
+* Méthode : Multinomial Logistic Regression
+* Trois modèles : auteur, auteur+distribution générique, auteur+genre
+* Hypothèse : Si les mots grammaticaux sont influencés par le genre en plus de l'auteur, le troisième modèle devrait fonctionner le mieux
+</script>
+</section>
+
+<section data-markdown>
+<script type="text/template">
+## Linear Regression
+<p><img height="400" data-src="img/linear_regression.png"></img></p>
+<p>Minimiser l'erreur ; prédire la position en y par x</p>
+<p>(Source: https://en.wikipedia.org/wiki/Linear_regression)</p>
+</script>
+</section>
+
+<section data-markdown>
+<script type="text/template">
+## Logistic Regression
+<p><img height="400" data-src="img/logistic-regression.jpeg"></img></p>
+<p>Prédire une catégorie par des indicateurs ordinaux</p>
+<p>(Source: https://en.wikipedia.org/wiki/Logistic_regression)</p>
+</script>
+</section>
+
+
+<section data-markdown>
+<script type="text/template">
+## Taux d'erreurs
+<p><img height="500" data-src="img/logistic-regression-error-rate.jpg"></img></p>
+<p>Taux d'erreurs de classification pour les trois modèles
+</script>
+</section>
+
+<section data-markdown>
+<script type="text/template">
+## Variation de fréquence
+<p><img height="500" data-src="img/boxplot-par.jpg"></img></p>
+<p>Pour le mot 'par' (n=1655)</p>
+</script>
+</section>
+
 
 
 
